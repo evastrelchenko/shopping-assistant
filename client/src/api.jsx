@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://shopping-assistant-production-faa4.up.railway.app/api';
 
 export const getRecommendations = async (message) => {
     const response = await axios.post(`${BASE_URL}/recommend`, { message });
